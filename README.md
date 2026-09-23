@@ -13,6 +13,7 @@ Four projects form one loop: **reach an agent → attack it → judge the result
 
 | Project | What it does | Status |
 |---|---|---|
+| [**Agent Red-Team Labs 🛡️🤖**](https://github.com/rbrus/agent-redteam-labs) · Python | A comprehensive, production-grade, hands-on laboratory curriculum for security engineers, AI developers, and red-teamers to master autonomous AI agent red-teaming, multi-protocol exploitation, and defensive hardening. | Labs |
 | [**redwire**](https://github.com/rbrus/redwire) · Go | One `Send()` interface to reach any agent over REST, MCP, A2A, WebSocket or a browser chat widget. SSRF-guarded (DNS-rebinding and redirect checks), standard library first, 85 tests. | Working, CI |
 | [**agent-probe**](https://github.com/rbrus/agent-probe) · CLI | Red-teaming scanner for AI agents: 12 probes mapped to the OWASP Top 10 for LLM apps, SARIF/JSON/Markdown output, CI exit-code thresholds. | R&D edition |
 | [**adk-demo-target**](https://github.com/rbrus/adk-demo-target) · Python | "Atlas", a deliberately vulnerable bank-support agent on Google ADK with three defence levels (`none`, `basic`, `hardened`). A scanner must find nothing on `hardened`: true negatives matter. | Working, local |
