@@ -9,6 +9,11 @@ Senior AI engineer & architect in Switzerland: secure AI agents, AI platforms on
 
 ## What's here
 
+<p align="center">
+  <a href="https://github.com/rbrus/c4-guardrails"><img src="https://raw.githubusercontent.com/rbrus/c4-guardrails/main/docs/media/before-after.png" alt="The same C4 diagram twice: the bad twin with red-highlighted edges and rule badges, the good twin clean. Output of c4-guardrails." width="900"></a>
+  <br><sub>A C4 diagram reviewed like code: bad twin → good twin, every finding citing a regulatory clause (<a href="https://github.com/rbrus/c4-guardrails">c4-guardrails</a>).</sub>
+</p>
+
 These projects form one loop: **reach an agent → attack it → judge the result → defend what it can touch** — and, before any of it ships, **check the design itself.**
 
 | Project | What it does | Status |
@@ -22,7 +27,13 @@ These projects form one loop: **reach an agent → attack it → judge the resul
 | [**c4-guardrails**](https://github.com/rbrus/c4-guardrails) · Go | Deterministic guardrails for C4 architecture diagrams (Mermaid C4 or JSON): 11 rules, each finding cites a GDPR / NIS2 / DORA / AI Act clause. Table, SARIF, PR summary and an HTML report with the diagram highlighted; GitHub Action included. No AI, no network. | Apache-2.0, CI |
 | [**Qwen on one DGX Spark**](https://github.com/rbrus/Qwen3.8-Flash-Next-Single-DGX-Spark) | Launcher and measured sweeps for a large open model on a single DGX Spark: 48.7 tok/s single stream, 162.9 tok/s at 8 streams, 512k context. | Measured |
 
-*These are the parts that stand on their own. A larger, integrated toolkit is in the works — more in 2026.*
+*These are the parts that stand on their own. A larger, integrated toolkit is in the works — more this autumn.*
+
+## Recently
+
+- **Sep 2026** · [c4-guardrails](https://github.com/rbrus/c4-guardrails): C4 diagrams checked locally and in CI, 11 deterministic rules, each finding cites a GDPR / NIS2 / DORA / AI Act clause; SARIF into code scanning.
+- **2026** · [Qwen on one DGX Spark](https://github.com/rbrus/Qwen3.8-Flash-Next-Single-DGX-Spark): 48.7 tok/s single stream, 162.9 tok/s at 8 streams, 512k context, measured.
+- **2026** · [agent-probe](https://github.com/rbrus/agent-probe) + [redwire](https://github.com/rbrus/redwire): 12 OWASP-mapped probes over REST, MCP, A2A, WebSocket and browser chat, with CI exit codes.
 
 ## What I work on
 
