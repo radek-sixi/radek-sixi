@@ -4,7 +4,7 @@
 
 Senior AI engineer & architect in Switzerland. 14 years shipping software where failure is expensive: defence edge devices in C/C++, an IoT platform for global pharma, and an agentic AI platform over live building telemetry. Today I attack agents, measure the tools that do it, and publish the raw numbers, including the ones where my own tool loses.
 
-[LinkedIn](https://www.linkedin.com/in/radekb/) · [Live red-teaming demo](https://autonomous-ai-red-teaming.web.app/) · **Open to remote roles and contracts from November 2026.**
+[rbrus.github.io](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · [Live red-teaming demo](https://autonomous-ai-red-teaming.web.app/) · **Open to remote roles and contracts from November 2026.**
 
 <a href="https://github.com/rbrus/agent-redteam-benchmark"><img src="assets/sixi-flow.svg" alt="Sixi, measured security for AI agents: 1 Reach (redwire, PyRIT A2ATarget) → 2 Attack (sixi-scanner) → 3 Judge (oracles, laya-as-judge) → 4 Prove (agent-redteam-benchmark, agent-arena) → 5 Ship (scan-action), with every fix measured on the benchmark before it ships. sixi-scanner v0.5.0: precision 0.452 and recall 0.750, both 1st of seven tools, $0.46 cloud cost." width="100%"></a>
 
