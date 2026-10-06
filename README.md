@@ -10,7 +10,7 @@ Senior AI engineer & architect in Switzerland. 14 years shipping software where 
 
 ## 🔦 New: sixi-scanner is open source
 
-[**sixi-scanner**](https://github.com/rbrus/sixi-scanner) is a red-team scanner for LLM agents. It's a single Go binary with zero dependencies, 21 techniques and **no LLM inside**: no attacker model, no hosted service, no telemetry. `go install` and scan. Output is JSON, SARIF or Markdown, and every finding includes the prompt and reply behind it.
+[**sixi-scanner**](https://github.com/rbrus/sixi-scanner) is a red-team scanner for LLM agents. It's a single Go binary with zero dependencies, 21 techniques and **no LLM inside**: no attacker model, no hosted service, no telemetry. `go install` and scan, or add [`rbrus/scan-action@v2`](https://github.com/rbrus/scan-action) to CI. Output is JSON, SARIF or Markdown, and every finding includes the prompt and reply behind it.
 
 I benchmarked it against six other tools on a real Microsoft Foundry agent behind Azure's strictest content safety, scored from the wire by 10 deterministic oracles and a tool-blind judge:
 
@@ -41,6 +41,7 @@ One loop: **reach an agent → attack it → judge the result → defend what it
 | Project | What it does |
 |---|---|
 | [**sixi-scanner**](https://github.com/rbrus/sixi-scanner) · Go | The scanner above. 21 techniques, zero deps, SARIF. Apache-2.0 |
+| [**scan-action**](https://github.com/rbrus/scan-action) · GitHub Action | sixi-scanner in CI: `uses: rbrus/scan-action@v2`, findings in the Security tab, gated on severity. An unreachable agent fails, never passes |
 | [**agent-redteam-benchmark**](https://github.com/rbrus/agent-redteam-benchmark) · Python | 7 red-teaming tools vs one real Foundry agent, scored from the wire |
 | [**agent-arena**](https://github.com/rbrus/agent-arena) · TypeScript | Evaluation arena with a model-free referee: scripted peers that lie, replay hashes anyone can verify, Diplomacy passing all 164 DATC cases. npm 0.2.3 |
 | [**redwire**](https://github.com/rbrus/redwire) · Go | One `Send()` to reach any agent over REST, MCP, A2A, WebSocket or a chat widget. SSRF-guarded |
@@ -55,6 +56,7 @@ One loop: **reach an agent → attack it → judge the result → defend what it
 
 ## Recently
 
+- **Oct** · [scan-action v2](https://github.com/rbrus/scan-action): sixi-scanner as a GitHub Action, SARIF into code scanning.
 - **Oct** · sixi-scanner open-sourced. v0.4 → v0.5 took precision 0.27 → 0.45, with recall at 0.75: 1st on both.
 - **Sep 30** · `A2ATarget` merged into Microsoft PyRIT.
 - **Sep 24–30** · Benchmark baseline plus six disclosed re-runs.
