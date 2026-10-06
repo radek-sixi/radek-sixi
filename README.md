@@ -2,7 +2,7 @@
 
 **I break AI agents, then build the controls that stop it — at runtime and at design time.**
 
-Senior AI engineer & architect in Switzerland. 14 years shipping software where failure is expensive: defence edge devices in C/C++, an IoT platform for global pharma, and an agentic AI platform over live building telemetry. Today I attack agents for a living, measure the tools that do it, and publish the numbers, including the ones where my own tools lose.
+Senior AI engineer & architect in Switzerland. 14 years shipping software where failure is expensive: Cloud and Agentic AI systems design and development. Defence edge IoT devices. An agentic AI platform over live building telemetry. Today I build and attack AI agents, measure the tools that do it, and publish the numbers, including the ones where my own tools lose.
 
 [LinkedIn](https://www.linkedin.com/in/radekb/) · [Live red-teaming demo](https://autonomous-ai-red-teaming.web.app/) · **Open to remote roles and contracts from November 2026.**
 
