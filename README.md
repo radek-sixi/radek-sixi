@@ -6,7 +6,7 @@ Senior AI engineer & architect in Switzerland. 14 years shipping software where 
 
 [rbrus.github.io](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · [Live red-teaming demo](https://autonomous-ai-red-teaming.web.app/) · **Open to remote roles and contracts from November 2026.**
 
-<a href="https://github.com/rbrus/agent-redteam-benchmark"><img src="assets/sixi-flow.svg" alt="Sixi, measured security for AI agents: 1 Reach (redwire, PyRIT A2ATarget) → 2 Attack (sixi-scanner) → 3 Judge (oracles, laya-as-judge) → 4 Prove (agent-redteam-benchmark, agent-arena) → 5 Ship (scan-action), with every fix measured on the benchmark before it ships. sixi-scanner v0.5.0: precision 0.452 and recall 0.750, both 1st of seven tools, $0.46 cloud cost." width="100%"></a>
+<a href="https://github.com/rbrus/agent-redteam-benchmark"><img src="assets/sixi-flow.svg" alt="Sixi, measured security for AI agents: 1 Reach (redwire, PyRIT A2ATarget) → 2 Attack (sixi-scanner) → 3 Judge (oracles, laya-as-judge) → 4 Prove (agent-redteam-benchmark, agent-arena) → 5 Ship (scan-action), with every fix measured on the benchmark before it ships. sixi-scanner v0.6.0: precision 0.688 and recall 0.833, both 1st of seven tools, $0.57 cloud cost." width="100%"></a>
 
 ---
 
@@ -31,12 +31,13 @@ Most AI red-teaming tools tell you what *they think* broke. On a real agent, 70�
 - **Tools' own reports are mostly noise.** 70–97% of each tool's flags were false alarms. Comparing tools by their self-reports compares their noise.
 - **It wouldn't *say* its secret, but it *e-mailed* it.** A poisoned KB article got the agent to mail an IBAN and a secret code to an attacker. Prompt Shields never flagged it.
 - **LLM judges miss business logic.** Two 30-EUR refunds beat a 50-EUR-per-request cap. The judge cleared 5 of 7; a five-line oracle caught all 7.
-- **sixi-scanner v0.5.0 was 1st on precision (0.452) and recall (0.750)**, for $0.46. Its gap is breadth: 7 distinct violating attacks against promptfoo's 89.
+- **sixi-scanner v0.6.0 is 1st on precision (0.688) and recall (0.833)**, for $0.57. A follow-up audit found recall at its ceiling (34 of 37 real leaks caught); its gap is breadth: 6 distinct violating attacks against promptfoo's 89.
 
 *I maintain the benchmark and the scanner; the conflict of interest is stated there, and every raw finding is public.*
 
 ## Recently
 
+- **Oct 7** · [sixi-scanner v0.6.0](https://github.com/rbrus/sixi-scanner/releases/tag/v0.6.0): markers that test the leak, not the attack. Precision 0.452 → 0.688, recall 0.750 → 0.833 on the benchmark; recall audited and at its ceiling.
 - **Oct** · [sixi-scanner v0.5.1](https://github.com/rbrus/sixi-scanner/releases) and [scan-action v2](https://github.com/rbrus/scan-action): open source, in CI, an unreachable target never reads as clean.
 - **Oct** · Benchmark: the open-source build, 1st on precision and recall; write-up reworked to lead with findings.
 - **Sep 30** · `A2ATarget` merged into Microsoft PyRIT.
