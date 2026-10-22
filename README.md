@@ -4,7 +4,7 @@
 
 Senior AI engineer & architect in Switzerland. 14 years shipping software where failure is expensive: defence edge devices in C/C++, an IoT platform for global pharma, resilient off-grid LoRa mesh systems, and an agentic AI platform over live building telemetry. Today I attack agents, measure the tools that do it, and publish the raw numbers — including the ones where my own tool loses.
 
-[rbrus.github.io](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · [Live red-teaming & profile](https://autonomous-ai-red-teaming.web.app/) · [Live Mesh Map](https://sixi-map.web.app/) · **Open to remote roles and contracts from November 2026.**
+[Portfolio](https://autonomous-ai-red-teaming.web.app/) · [Live Mesh Map](https://sixi-map.web.app/) · [Writing (rbrus.github.io)](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · **Open to remote roles and contracts from November 2026.**
 
 <a href="https://github.com/radek-sixi/agent-redteam-benchmark"><img src="assets/sixi-flow.svg" alt="Sixi, measured security for AI agents: 1 Reach (redwire, PyRIT A2ATarget) → 2 Attack (sixi-scanner) → 3 Judge (oracles, laya-as-judge) → 4 Prove (agent-redteam-benchmark, agent-arena) → 5 Ship (scan-action), with every fix measured on the benchmark before it ships. sixi-scanner v0.8.4: precision 0.821 and recall 0.571 (both 1st of seven tools), 1.000 precision on multi-turn sessions." width="100%"></a>
 
@@ -44,9 +44,10 @@ When power and mobile networks go down in Alpine valleys, cloud-dependent tools 
 | | Project | What it does |
 |---|---|---|
 | **Handheld & Console** | [**sixi-tdeck-plus (Faro)**](https://github.com/radek-sixi/sixi-tdeck-plus) · C/C++ · LVGL 9 · Python | Clean-room open-source (Apache-2.0) touch-first handheld UI and Ubuntu Linux desktop companion console for [MeshCore](https://github.com/meshcore-dev/MeshCore) on LilyGo T-Deck Plus, T-Beam S3 Supreme (WiFi/BLE/USB), and Heltec V3. Includes a 2D mesh topology graph, SX1262 link-budget & time-on-air calculator, offline SNR heatmap map, ACK/RTT direct messaging, 320×240 simulator (`faro-sim`), and a 1-click browser WebSerial flasher |
-| **Live Mesh Map** | [**sixi-map.web.app**](https://sixi-map.web.app/) · TypeScript · MQTT · TimescaleDB | Live telemetry and topology map built alongside the LoRa mesh R&D stack (actively expanded with new layers, RF coverage views, and node telemetry) |
-| **Resilient Mesh R&D** | **Rifugio / Sixi Mesh Architecture** · Python · TS · C# · C | High-level R&D on infrastructure-independent communications and field telemetry: compact offline-verifiable `Ed25519` signed broadcast frames (87-byte EU CAMF-aligned packets), bi-directional delivery with explicit end-to-end state tracking (never showing *sent* as *delivered*), strict 868 MHz duty-cycle guards, cross-language conformance test vectors, and terrain-aware line-of-sight relay modeling |
-| **Edge AI & OT** | [**GlassBoxEdge**](https://github.com/radek-sixi/GlassBoxEdge) · Python · Edge | Air-gapped inference and agentic diagnostics over live building & industrial telemetry on NVIDIA Jetson / sovereign edge hardware |
+| **Live Mesh Map** | [**sixi-map.web.app**](https://sixi-map.web.app/) · TypeScript · MQTT · TimescaleDB | Real-time world map of open radio mesh and LoRa nodes (Meshtastic, MeshCore, LoRaWAN) with live links and public chat — built alongside the resilient LoRa mesh R&D stack and actively expanded |
+| **Resilient Mesh R&D** | **Rifugio** · Python · TS · .NET · C | Authenticated alerts and two-way assistance messages over a LoRa mesh in Alpine valleys, meant to complement official warning channels: compact offline-verifiable `Ed25519` signed frames (87-byte EU CAMF-aligned packets), conformance-tested libraries across Python/TS/.NET/C, two-person hardware-key signing, strict 868 MHz duty-cycle guards, and terrain-aware line-of-sight relay modeling |
+| **Upstream** | [**MeshCore**](https://github.com/meshcore-dev/MeshCore/pulls?q=is%3Apr+author%3Aradek-sixi) · C++ / Embedded | Upstream pull requests to the MeshCore hybrid-routing packet radio protocol: dynamic Wi-Fi for the LilyGO T-Beam Supreme SX1262 and signed TX power conversion fixes |
+| **Edge AI & OT** | [**GlassBoxEdge**](https://github.com/radek-sixi/GlassBoxEdge) · Python · Edge | Air-gapped inference and agentic diagnostics over live industrial & building telemetry on two NVIDIA Jetson edge nodes |
 
 ---
 
