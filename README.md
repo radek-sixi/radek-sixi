@@ -44,8 +44,7 @@ When power and mobile networks go down in Alpine valleys, cloud-dependent tools 
 | | Project | What it does |
 |---|---|---|
 | **Handheld & Console** | [**sixi-tdeck-plus (Faro)**](https://github.com/radek-sixi/sixi-tdeck-plus) · C/C++ · LVGL 9 · Python | Clean-room open-source (Apache-2.0) touch-first handheld UI and Ubuntu Linux desktop companion console for [MeshCore](https://github.com/meshcore-dev/MeshCore) on LilyGo T-Deck Plus, T-Beam S3 Supreme (WiFi/BLE/USB), and Heltec V3. Includes a 2D mesh topology graph, SX1262 link-budget & time-on-air calculator, offline SNR heatmap map, ACK/RTT direct messaging, 320×240 simulator (`faro-sim`), and a 1-click browser WebSerial flasher |
-| **Live Mesh Map** | [**sixi-map.web.app**](https://sixi-map.web.app/) · TypeScript · MQTT · TimescaleDB | Real-time world map of open radio mesh and LoRa nodes (Meshtastic, MeshCore, LoRaWAN) with live links and public chat — built alongside the resilient LoRa mesh R&D stack and actively expanded |
-| **Resilient Mesh R&D** | **Rifugio** · Python · TS · .NET · C | Authenticated alerts and two-way assistance messages over a LoRa mesh in Alpine valleys, meant to complement official warning channels: compact offline-verifiable `Ed25519` signed frames (87-byte EU CAMF-aligned packets), conformance-tested libraries across Python/TS/.NET/C, two-person hardware-key signing, strict 868 MHz duty-cycle guards, and terrain-aware line-of-sight relay modeling |
+| **Live Mesh Map** | [**sixi-map.web.app**](https://sixi-map.web.app/) · TypeScript · MQTT · TimescaleDB | Real-time world map of open radio mesh and LoRa nodes (Meshtastic, MeshCore, LoRaWAN) with live links and public chat — actively expanded |
 | **Upstream** | [**MeshCore**](https://github.com/meshcore-dev/MeshCore/pulls?q=is%3Apr+author%3Aradek-sixi) · C++ / Embedded | Upstream pull requests to the MeshCore hybrid-routing packet radio protocol: dynamic Wi-Fi for the LilyGO T-Beam Supreme SX1262 and signed TX power conversion fixes |
 | **Edge AI & OT** | [**GlassBoxEdge**](https://github.com/radek-sixi/GlassBoxEdge) · Python · Edge | Air-gapped inference and agentic diagnostics over live industrial & building telemetry on two NVIDIA Jetson edge nodes |
 
@@ -55,7 +54,7 @@ When power and mobile networks go down in Alpine valleys, cloud-dependent tools 
 
 - **Oct 22** · [**sixi-tdeck-plus (Faro) v0.1.0**](https://github.com/radek-sixi/sixi-tdeck-plus): open-source (Apache-2.0) LVGL 9 handheld UI, Linux desktop companion app, simulator, and 1-click browser WebSerial flasher for MeshCore LoRa devices (T-Deck Plus, T-Beam S3 Supreme, Heltec V3).
 - **Oct** · [**sixi-scanner v0.8.4**](https://github.com/radek-sixi/sixi-scanner/releases/tag/v0.8.4): 27 techniques, multi-turn session probes, parameter induction (secrets routed into tool arguments), and trace-backed outbound taint relay checks. Precision 0.821 (1st of 7 tools) and 1.000 on multi-turn sessions.
-- **Oct** · **Resilient LoRa mesh R&D & [sixi-map.web.app](https://sixi-map.web.app/)**: live mesh telemetry map (actively expanded), cross-language cryptographic frame verification (`Python`/`TS`/`C#`/`C`), Alpine terrain line-of-sight modeling, and deterministic multi-agent build & audit pipelines.
+- **Oct** · [**sixi-map.web.app**](https://sixi-map.web.app/): live world map of open radio mesh and LoRa nodes (Meshtastic, MeshCore, LoRaWAN) with live links and telemetry, actively expanded.
 - **Oct** · [scan-action v2](https://github.com/radek-sixi/scan-action): open source, in CI, an unreachable target never reads as clean.
 - **Sep 30** · `A2ATarget` merged into Microsoft PyRIT.
 - **Sep 28** · agent-arena 0.2.3 on npm.
