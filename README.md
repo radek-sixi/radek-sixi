@@ -4,7 +4,7 @@
 
 Senior AI engineer & architect in Switzerland. 14 years shipping software where failure is expensive: defence edge devices in C/C++, an IoT platform for global pharma, resilient off-grid LoRa mesh systems, and an agentic AI platform over live building telemetry. Today I attack agents, measure the tools that do it, and publish the raw numbers — including the ones where my own tool loses.
 
-[Portfolio](https://radeksixi.web.app/) · [Writing (rbrus.github.io)](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · [X](https://x.com/radeksixi) · **Open to remote roles and contracts from November 2026.**
+[Portfolio](https://radeksixi.web.app/) · [Writing (radek-sixi.github.io)](https://radek-sixi.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · [X](https://x.com/radeksixi) · **Open to remote roles and contracts from November 2026.**
 
 <a href="https://github.com/radek-sixi/agent-redteam-benchmark"><img src="assets/sixi-flow.svg" alt="Sixi, measured security for AI agents: 1 Reach (redwire, PyRIT A2ATarget) → 2 Attack (sixi-scanner) → 3 Judge (oracles, laya-as-judge) → 4 Prove (agent-redteam-benchmark, agent-arena) → 5 Ship (scan-action), with every fix measured on the benchmark before it ships. sixi-scanner v0.8.4: precision 0.821 and recall 0.571 (both 1st of seven tools), 1.000 precision on multi-turn sessions." width="100%"></a>
 
