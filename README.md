@@ -4,7 +4,7 @@
 
 Senior AI engineer & architect in Switzerland. 14 years shipping software where failure is expensive: defence edge devices in C/C++, an IoT platform for global pharma, resilient off-grid LoRa mesh systems, and an agentic AI platform over live building telemetry. Today I attack agents, measure the tools that do it, and publish the raw numbers — including the ones where my own tool loses.
 
-[Portfolio](https://autonomous-ai-red-teaming.web.app/) · [Live Mesh Map](https://sixi-map.web.app/) · [Writing (rbrus.github.io)](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · **Open to remote roles and contracts from November 2026.**
+[Portfolio](https://autonomous-ai-red-teaming.web.app/) · [Writing (rbrus.github.io)](https://rbrus.github.io) · [LinkedIn](https://www.linkedin.com/in/radekb/) · **Open to remote roles and contracts from November 2026.**
 
 <a href="https://github.com/radek-sixi/agent-redteam-benchmark"><img src="assets/sixi-flow.svg" alt="Sixi, measured security for AI agents: 1 Reach (redwire, PyRIT A2ATarget) → 2 Attack (sixi-scanner) → 3 Judge (oracles, laya-as-judge) → 4 Prove (agent-redteam-benchmark, agent-arena) → 5 Ship (scan-action), with every fix measured on the benchmark before it ships. sixi-scanner v0.8.4: precision 0.821 and recall 0.571 (both 1st of seven tools), 1.000 precision on multi-turn sessions." width="100%"></a>
 
@@ -43,8 +43,8 @@ When power and mobile networks go down in Alpine valleys, cloud-dependent tools 
 
 | | Project | What it does |
 |---|---|---|
-| **Handheld & Console** | [**sixi-tdeck-plus (Faro)**](https://github.com/radek-sixi/sixi-tdeck-plus) · C/C++ · LVGL 9 · Python | Clean-room open-source (Apache-2.0) touch-first handheld UI and Ubuntu Linux desktop companion console for [MeshCore](https://github.com/meshcore-dev/MeshCore) on LilyGo T-Deck Plus, T-Beam S3 Supreme (WiFi/BLE/USB), and Heltec V3. Includes a 2D mesh topology graph, SX1262 link-budget & time-on-air calculator, offline SNR heatmap map, ACK/RTT direct messaging, 320×240 simulator (`faro-sim`), and a 1-click browser WebSerial flasher |
-| **Live Mesh Map** | [**sixi-map.web.app**](https://sixi-map.web.app/) · TypeScript · MQTT · TimescaleDB | Real-time world map of open radio mesh and LoRa nodes (Meshtastic, MeshCore, LoRaWAN) with live links and public chat — actively expanded |
+| **Handheld & Console** | [**sixi-tdeck-plus (Faro)**](https://github.com/radek-sixi/sixi-tdeck-plus) · C/C++ · LVGL 9 · Python | Clean-room open-source (Apache-2.0) touch-first handheld UI and Ubuntu Linux desktop companion console for [MeshCore](https://github.com/meshcore-dev/MeshCore) on LilyGo T-Deck Plus, T-Beam S3 Supreme (WiFi/BLE/USB), and Heltec V3. Includes a 2D mesh topology graph, SX1262 link-budget & time-on-air calculator, offline SNR heatmap, ACK/RTT direct messaging, 320×240 simulator (`faro-sim`), and a 1-click browser WebSerial flasher |
+| **LoRa & SDR Bridge** | [**sixi-observer**](https://github.com/radek-sixi/sixi-observer) · Python · LoRa · RTL-SDR | Open-source (MIT) observer bridge for MeshCore / LoRa radios (T-Beam Supreme SX1262, Heltec V3/V4, RAK4631) and RTL-SDR V4: local `Ed25519` cryptographic `ADVERT` verification, multi-hop SNR/RSSI packet telemetry, ML Bayesian ghost-hop repeater triangulation, and a 0 ms local WebSocket stream |
 | **Upstream** | [**MeshCore**](https://github.com/meshcore-dev/MeshCore/pulls?q=is%3Apr+author%3Aradek-sixi) · C++ / Embedded | Upstream pull requests to the MeshCore hybrid-routing packet radio protocol: dynamic Wi-Fi for the LilyGO T-Beam Supreme SX1262 and signed TX power conversion fixes |
 | **Edge AI & OT** | [**GlassBoxEdge**](https://github.com/radek-sixi/GlassBoxEdge) · Python · Edge | Air-gapped inference and agentic diagnostics over live industrial & building telemetry on two NVIDIA Jetson edge nodes |
 
@@ -52,9 +52,9 @@ When power and mobile networks go down in Alpine valleys, cloud-dependent tools 
 
 ## Recently
 
+- **Oct** · [**sixi-observer**](https://github.com/radek-sixi/sixi-observer): open-source (MIT) LoRa & RTL-SDR V4 observer bridge with local Ed25519 advertisement verification, ML Bayesian ghost-hop triangulation, and a local WebSocket stream.
 - **Oct 22** · [**sixi-tdeck-plus (Faro) v0.1.0**](https://github.com/radek-sixi/sixi-tdeck-plus): open-source (Apache-2.0) LVGL 9 handheld UI, Linux desktop companion app, simulator, and 1-click browser WebSerial flasher for MeshCore LoRa devices (T-Deck Plus, T-Beam S3 Supreme, Heltec V3).
 - **Oct** · [**sixi-scanner v0.8.4**](https://github.com/radek-sixi/sixi-scanner/releases/tag/v0.8.4): 27 techniques, multi-turn session probes, parameter induction (secrets routed into tool arguments), and trace-backed outbound taint relay checks. Precision 0.821 (1st of 7 tools) and 1.000 on multi-turn sessions.
-- **Oct** · [**sixi-map.web.app**](https://sixi-map.web.app/): live world map of open radio mesh and LoRa nodes (Meshtastic, MeshCore, LoRaWAN) with live links and telemetry, actively expanded.
 - **Oct** · [scan-action v2](https://github.com/radek-sixi/scan-action): open source, in CI, an unreachable target never reads as clean.
 - **Sep 30** · `A2ATarget` merged into Microsoft PyRIT.
 - **Sep 28** · agent-arena 0.2.3 on npm.
@@ -65,7 +65,7 @@ When power and mobile networks go down in Alpine valleys, cloud-dependent tools 
 - **Agent identity & authorization:** on-behalf-of flows, non-human identities, least-privilege MCP tools.
 - **AI gateways, guardrails & evals:** Azure API Management, Content Safety, red-teaming in CI, deterministic oracles.
 - **Regulated industries:** security evidence that maps to DORA, NIS2, GDPR and the EU AI Act.
-- **Sovereign edge AI, LoRa mesh & OT/IoT:** open models on NVIDIA Jetson Thor / DGX Spark, air-gapped inference, embedded C/C++ & LVGL 9 firmware on ESP32-S3 / SX1262 LoRa mesh ([sixi-tdeck-plus](https://github.com/radek-sixi/sixi-tdeck-plus)), and agents over live telemetry ([GlassBoxEdge](https://github.com/radek-sixi/GlassBoxEdge)).
+- **Sovereign edge AI, LoRa mesh & OT/IoT:** open models on NVIDIA Jetson Thor / DGX Spark, air-gapped inference, embedded C/C++ & LVGL 9 firmware on ESP32-S3 / SX1262 LoRa mesh ([sixi-tdeck-plus](https://github.com/radek-sixi/sixi-tdeck-plus), [sixi-observer](https://github.com/radek-sixi/sixi-observer)), and agents over live telemetry ([GlassBoxEdge](https://github.com/radek-sixi/GlassBoxEdge)).
 
 **Stack:** Python · Go · TypeScript · C# / .NET · C/C++ · Embedded (ESP32-S3, LVGL, LoRa / MeshCore) · LangGraph · Google ADK · MCP · A2A · Azure / Microsoft Foundry · GCP · AWS · vLLM · NVIDIA Jetson
 
