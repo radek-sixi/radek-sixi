@@ -89,7 +89,7 @@
     <rect class="card" x="776" y="96" width="152" height="150" rx="10"/>
     <text class="step" x="792" y="122">5 · SHIP</text>
     <text class="q" x="792" y="146">Every pull request</text>
-    <text class="repo" x="792" y="174">scan-action@v2</text>
+    <text class="repo" x="792" y="174">--format sarif</text>
     <text class="note" x="792" y="194">SARIF → Security tab</text>
     <text class="note" x="792" y="220">unreachable ≠ clean</text>
   </g>
