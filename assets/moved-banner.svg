@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 296" width="920" height="296" role="img" aria-labelledby="banner-title banner-desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="banner-title">Account &amp; Blog Moved — Radek (Sixi) is now at @radeksixi</title>
+  <desc id="banner-desc">GitHub account moved from github.com/radek-sixi to github.com/radeksixi, and blog moved from https://radek-sixi.github.io/ to https://radeksixi.github.io/.</desc>
+  <style>
+    .frame { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5; }
+    .card { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
+    .card-accent { fill: #fff8f2; stroke: #e36209; stroke-width: 1.5; }
+    .eyebrow { fill: #c4530a; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .dot { fill: #e36209; }
+    .title { fill: #1f2328; font-size: 27px; font-weight: 700; letter-spacing: -0.015em; }
+    .handle { fill: #c4530a; }
+    .sub { fill: #57606a; font-size: 15px; }
+    .label { fill: #57606a; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .old-url { fill: #8c959f; font-size: 13px; text-decoration: line-through; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .arrow { fill: #e36209; font-size: 16px; font-weight: 700; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .new-url { fill: #0969da; font-size: 16px; font-weight: 700; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .badge { fill: #fff1e5; stroke: #f5b991; stroke-width: 1; }
+    .badge-text { fill: #c4530a; font-size: 11px; font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .frame { fill: #0d1117; stroke: #30363d; }
+      .card { fill: #161b22; stroke: #30363d; }
+      .card-accent { fill: #1a1410; stroke: #f0883e; }
+      .eyebrow { fill: #f0883e; }
+      .dot { fill: #f0883e; }
+      .title { fill: #e6edf3; }
+      .handle { fill: #f0883e; }
+      .sub { fill: #8d96a0; }
+      .label { fill: #8d96a0; }
+      .old-url { fill: #6e7681; }
+      .arrow { fill: #f0883e; }
+      .new-url { fill: #4493f8; }
+      .badge { fill: #2a1a0e; stroke: #7c4318; }
+      .badge-text { fill: #f0883e; }
+    }
+  </style>
+
+  <!-- Outer Container -->
+  <rect x="1" y="1" width="918" height="294" rx="14" class="frame" />
+
+  <!-- Eyebrow -->
+  <circle cx="42" cy="40" r="4.5" class="dot" />
+  <text x="55" y="44" class="eyebrow">ACCOUNT &amp; BLOG MOVED</text>
+
+  <!-- Headline & Subtitle -->
+  <text x="36" y="84" class="title">Radek (Sixi) has moved to <tspan class="handle">@radeksixi</tspan></text>
+  <text x="36" y="112" class="sub">All active open-source repositories, releases, and technical write-ups now live under my primary account.</text>
+
+  <!-- Card 1: GitHub Account -->
+  <rect x="36" y="138" width="414" height="124" rx="10" class="card-accent" />
+  <text x="58" y="168" class="label">GITHUB PROFILE &amp; CODE</text>
+  <rect x="352" y="152" width="78" height="22" rx="11" class="badge" />
+  <text x="391" y="167" text-anchor="middle" class="badge-text">PRIMARY</text>
+  <text x="58" y="200" class="old-url">github.com/radek-sixi</text>
+  <text x="58" y="234"><tspan class="arrow">→ </tspan><tspan class="new-url">github.com/radeksixi</tspan></text>
+
+  <!-- Card 2: Blog -->
+  <rect x="470" y="138" width="414" height="124" rx="10" class="card" />
+  <text x="492" y="168" class="label">TECHNICAL BLOG &amp; BENCHMARKS</text>
+  <rect x="774" y="152" width="90" height="22" rx="11" class="badge" />
+  <text x="819" y="167" text-anchor="middle" class="badge-text">REDIRECTS</text>
+  <text x="492" y="200" class="old-url">https://radek-sixi.github.io/</text>
+  <text x="492" y="234"><tspan class="arrow">→ </tspan><tspan class="new-url">https://radeksixi.github.io/</tspan></text>
+</svg>
